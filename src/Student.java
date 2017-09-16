@@ -1,3 +1,4 @@
+package test;
 import java.util.Date;
 
 /**
@@ -70,12 +71,12 @@ public class Student implements Comparable {
 		this.avgMark = avgMark;
 	}
 
-	//@Override
+	@Override
 	public int hashCode() {
 		return super.hashCode();
 	}
 
-	//@Override
+	@Override
 	public boolean equals(Object obj) {
 		return super.equals(obj);
 	}
@@ -84,9 +85,10 @@ public class Student implements Comparable {
 	/**
 	 * DO NOT change this method it will be used during the task check
 	 */
-	//@Override
+	@Override
 	public int compareTo(Object o) {
 		Student other = (Student) o;
 		return (this.fullName.compareTo(other.fullName));
 	}
 }
+
