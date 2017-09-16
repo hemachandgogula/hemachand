@@ -204,7 +204,14 @@ if(student==null)
 	//@Override
 	public Student[] getStudentsByAge(int age) {
 		// Add your implementation here
-		return null;
+		int i=0;
+		while(students[i])
+		{
+			if(students[i].age=age)
+				return students[i];
+			i++;
+			
+		}
 	}
 
 	//@Override
