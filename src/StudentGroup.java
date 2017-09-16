@@ -35,7 +35,7 @@ public class StudentGroup implements StudentArrayOperation {
 		if(students==null)
 		throw new IllegalArgumentException("Invalid operation");
 		else
-		Student[] students=students[];
+		Student[] students=students[100];
 	}
 
 	//@Override
