@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class StudentGroup implements StudentArrayOperation {
 
-	private Student[] students;
+	private Student[] students;	
 	
 	/**
 	 * DO NOT remove or change this constructor, it will be used during task check
@@ -26,25 +26,18 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
-		try{
 			if(length==0)
 			{
-		throws new IllegalArgumentException("IllegalArgumentException");
+		throw new IllegalArgumentException("IllegalArgumentException");
 			}
 			else
 			return student[0];
-		   }
-	catch(IllegalArgumentException e)
-		{
-			System.out.println("Error!");
-		}
-
-
 	}
 
 	@Override
 	public void setStudents(Student[] students) {
 		// Add your implementation here
+		try(
 	}
 
 	@Override
