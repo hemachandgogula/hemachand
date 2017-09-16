@@ -38,7 +38,7 @@ public class Main {
 		//You may test that your code works find here
 		//Please check that your code works and has no 
 		//compilation problems before to submit
-		StudentGroup stdgrp=new StudentGroup(3);
+//		StudentGroup stdgrp=new StudentGroup(3);
 			memu m=new menu();
 			menu.choose;
 	}
