@@ -23,7 +23,7 @@ public class StudentGroup implements StudentArrayOperation {
 		this.students = new Student[length];
 	}
 
-	@Override
+	//@Override
 	public Student[] getStudents() {
 		// Add your implementation here
 			if(length==0)
@@ -34,110 +34,109 @@ public class StudentGroup implements StudentArrayOperation {
 			return student[0];
 	}
 
-	@Override
+	//@Override
 	public void setStudents(Student[] students) {
 		// Add your implementation here
-		try(
 	}
 
-	@Override
+	//@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
 		return null;
 	}
 
-	@Override
+	//@Override
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public void addLast(Student student) {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public void add(Student student, int index) {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public void remove(int index) {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public void remove(Student student) {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public void removeFromIndex(int index) {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public void removeFromElement(Student student) {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public void removeToIndex(int index) {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public void removeToElement(Student student) {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public void bubbleSort() {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public Student[] getByBirthDate(Date date) {
 		// Add your implementation here
 		return null;
 	}
 
-	@Override
+	//@Override
 	public Student[] getBetweenBirthDates(Date firstDate, Date lastDate) {
 		// Add your implementation here
 		return null;
 	}
 
-	@Override
+	//@Override
 	public Student[] getNearBirthDate(Date date, int days) {
 		// Add your implementation here
 		return null;
 	}
 
-	@Override
+	//@Override
 	public int getCurrentAgeByDate(int indexOfStudent) {
 		// Add your implementation here
 		return 0;
 	}
 
-	@Override
+	//@Override
 	public Student[] getStudentsByAge(int age) {
 		// Add your implementation here
 		return null;
 	}
 
-	@Override
+	//@Override
 	public Student[] getStudentsWithMaxAvgMark() {
 		// Add your implementation here
 		return null;
 	}
 
-	@Override
+	//@Override
 	public Student getNextStudent(Student student) {
 		// Add your implementation here
 		return null;
