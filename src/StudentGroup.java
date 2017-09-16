@@ -1,4 +1,4 @@
-package test;
+//package test;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -26,19 +26,19 @@ public class StudentGroup implements StudentArrayOperation {
 		this.students = new Student[length];
 	}
 
-	@Override
+	//@Override
 	public Student[] getStudents() {
 		// Add your implementation here
 		return students;
 	}
 
-	@Override
+	//@Override
 	public void setStudents(Student[] students) {
 		// Add your implementation here
 		this.students=students;
 	}
 
-	@Override
+	//@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
 		   if(students.length >= 0){
@@ -54,19 +54,19 @@ public class StudentGroup implements StudentArrayOperation {
 	
 	}
 
-	@Override
+	//@Override
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
 		students[index]=student;
 	}
 
-	@Override
+	//@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
 		students[0]=student;
 	}
 
-	@Override
+	//@Override
 	public void addLast(Student student) {
 		// Add your implementation here
 		int length= students.length;
@@ -74,13 +74,13 @@ public class StudentGroup implements StudentArrayOperation {
              students[length]=student; 
 	}
 
-	@Override
+	//@Override
 	public void add(Student student, int index) {
 		// Add your implementation here
      students[index]=student;
 	}
 
-	@Override
+	//@Override
 	public void remove(int index) {
 		// Add your implementation here
 		List<Student> stslist=getStudentList(students);
@@ -88,7 +88,7 @@ public class StudentGroup implements StudentArrayOperation {
 		
 	}
 
-	@Override
+	//@Override
 	public void remove(Student student) {
 		// Add your implementation here
 		List<Student> stslist=getStudentList(students);
@@ -107,7 +107,7 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 	}
 
-	@Override
+	//@Override
 	public void removeFromIndex(int index) {
 		// Add your implementation here
 		List<Student> stslist=getStudentList(students);
@@ -119,7 +119,7 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 	}
 
-	@Override
+	//@Override
 	public void removeFromElement(Student student) {
 		// Add your implementation here
 		List<Student> stslist=getStudentList(students);
@@ -138,7 +138,7 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 	}
 
-	@Override
+	//@Override
 	public void removeToIndex(int index) {
 		// Add your implementation here
 		List<Student> stslist=getStudentList(students);
@@ -150,7 +150,7 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 	}
 
-	@Override
+	//@Override
 	public void removeToElement(Student student) {
 		// Add your implementation here
 		List<Student> stslist=getStudentList(students);
@@ -169,12 +169,12 @@ public class StudentGroup implements StudentArrayOperation {
 		}
 	}
 
-	@Override
+	//@Override
 	public void bubbleSort() {
 		// Add your implementation here
 	}
 
-	@Override
+	//@Override
 	public Student[] getByBirthDate(Date date) {
 		// Add your implementation here
 		Student stss[] = null;
@@ -188,37 +188,37 @@ public class StudentGroup implements StudentArrayOperation {
 		return stss;
 	}
 
-	@Override
+	//@Override
 	public Student[] getBetweenBirthDates(Date firstDate, Date lastDate) {
 		// Add your implementation here
 		return null;
 	}
 
-	@Override
+	//@Override
 	public Student[] getNearBirthDate(Date date, int days) {
 		// Add your implementation here
 		return null;
 	}
 
-	@Override
+	//@Override
 	public int getCurrentAgeByDate(int indexOfStudent) {
 		// Add your implementation here
 		return 0;
 	}
 
-	@Override
+	//@Override
 	public Student[] getStudentsByAge(int age) {
 		// Add your implementation here
 		return null;
 	}
 
-	@Override
+	//@Override
 	public Student[] getStudentsWithMaxAvgMark() {
 		// Add your implementation here
 		return null;
 	}
 
-	@Override
+	//@Override
 	public Student getNextStudent(Student student) {
 		// Add your implementation here
 		return null;
