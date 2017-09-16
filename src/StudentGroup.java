@@ -137,22 +137,44 @@ public class StudentGroup implements StudentArrayOperation {
 	if(student==null)
 		throw new IllegalArgumentException("Invalid operation");
 		// Add your implementation here
+		students=ArrayUtils.remove(students,student.id);
 		
 	}
 
 	//@Override
 	public void removeToIndex(int index) {
 		// Add your implementation here
+	if(index<0||index>students.length())
+		throw new IllegalArgumentException("Invalid length");
+		students=ArrayUtils.remove(students,0,index);
 	}
 
 	//@Override
 	public void removeToElement(Student student) {
 		// Add your implementation here
+if(student==null)
+		throw new IllegalArgumentException("Invalid operation");
+		// Add your implementation here
+		students=ArrayUtils.remove(students,0,student.id);
 	}
 
 	//@Override
 	public void bubbleSort() {
 		// Add your implementation here
+		int i,j;
+		Student temp;
+		for(i=0;i<student.length();i++)
+			{
+				for(j=0;j<student.length()-i-1;j++)
+				{
+					if(students[j].id<students[j+1])
+					{
+						temp=students[j];
+						students[j]=students[j+1];
+						students[j+1]=students[j];
+					}
+				}
+			}
 	}
 
 	//@Override
@@ -188,12 +210,19 @@ public class StudentGroup implements StudentArrayOperation {
 	//@Override
 	public Student[] getStudentsWithMaxAvgMark() {
 		// Add your implementation here
+
 		return null;
 	}
 
 	//@Override
 	public Student getNextStudent(Student student) {
 		// Add your implementation here
-		return null;
+		if(student==null)
+		throw new IllegalArgumentException("Invalid operation");
+		while(students[i]!=student)
+		{
+		i++;
+		}
+		return student[i+1];
 	}
 }
